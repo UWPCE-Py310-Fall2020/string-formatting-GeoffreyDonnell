@@ -25,8 +25,27 @@ def task_five(s):
     return (print(f_string.format(*s)))
 
 def task_six():
-    return print('{:20}{:10}{:20}{:8}'.format('First', '$99.01', 'Second', '$88.09'))
-    return
+    Table = ['Item', 'Quantity','Units','Price',
+             'Gas',21,'Gallons','$15.50',
+             'Wax', 1,'Per Box','$8.00',
+             'Exhuast', 1, 'Each', '$1200',
+             'Rims', 4, 'Per Set', '$2999.95',
+             'Car', 1,'Each','$32,995.00']
+
+    size = int(len(Table)/4)
+
+    for step in range(0,1):
+        f_string = '{:15}{:20}{:20}{:20}'
+        print(f_string.format(Table[step*4],Table[step*4+1],Table[step*4+2],Table[step*4+3]))
+    for step in range (1,size):
+        f_string = '{:15}{:<20d}{:20}{:20}'
+        print(f_string.format(Table[step * 4], Table[step * 4 + 1], Table[step * 4 + 2],Table[step*4+3]))
+    pass
+
+def extratask_six():
+    
+    pass
+
 
 #task_one()
 #task_two()
@@ -36,5 +55,4 @@ def task_six():
 #task_four(tuple_task4)
 #tuple_task5 = ('orange', 1.3, 'lemon', 1.1)
 #task_five(tuple_task5)
-
-task_six()
+#task_six()

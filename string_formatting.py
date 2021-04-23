@@ -43,16 +43,23 @@ def task_six():
     pass
 
 def extratask_six():
-    
-    pass
+    return print('{:5}{:5}{:5}{:5}{:5}{:5}{:5}{:5}{:5}{:5}'.format(*tuple(range(0,10))))
 
 
-#task_one()
-#task_two()
-#tuple_task3 = (1,2,3,4,5,6)
-#task_three(tuple_task3)
-#tuple_task4 = (4, 30, 2017, 2, 27)
-#task_four(tuple_task4)
-#tuple_task5 = ('orange', 1.3, 'lemon', 1.1)
-#task_five(tuple_task5)
-#task_six()
+print('Output of Task One:')
+task_one()
+print('Output of Task Two:')
+task_two()
+print('Output of Task Three:')
+tuple_task3 = (1,2,3,4,5,6)
+task_three(tuple_task3)
+print('Output of Task Four:')
+tuple_task4 = (4, 30, 2017, 2, 27)
+task_four(tuple_task4)
+print('Output of Task Five:')
+tuple_task5 = ('orange', 1.3, 'lemon', 1.1)
+task_five(tuple_task5)
+print('Output of Task Six:')
+task_six()
+print('Output of Extra Task Six:')
+extratask_six()
